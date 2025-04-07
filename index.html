@@ -3,29 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Контрольное задание №1</title>
+    <link rel="stylesheet" href="page.css">
     <link rel="stylesheet" href="buttons.css">
-    <link rel="stylesheet" href="table.css"">
+    <link rel="stylesheet" href="table.css">
 </head>
 <body>
-    <div>
-        <button class="editButton", onclick="addNewColumn()">Добавить новую колонку</button>
-        <button class="editButton", onclick="popLastColumn()">Удалить последнюю колонку</button>
-    </div>
+    <main>
+        <div>
+            <button class="editButton", onclick="addNewColumn()">Добавить новую колонку</button>
+            <button class="editButton", onclick="popLastColumn()">Удалить последнюю колонку</button>
+        </div>
+        
+        <div id="tableContainer">
+            <table id="tableId">
+                <caption>Расширяющаяся таблица</caption>
+                <tr id="tableRow">
+                    <td>Первичная колонка</td>
+                </tr>
+            </table>
+        </div>
+
+        <template id="columnTemplate">
+            <td>
+                <div class="editableText" contenteditable="true" spellcheck="false">NewCol</div>
+                <div class="resizer"></div>
+            </td>
+        </template>
+
+        <script src="main.js"></script>
+    </main>
     
-    <div id="tableContainer">
-        <table>
-            <tr id="tableRow">Расширяющаяся таблица
-                <td>Первичная колонка <div class="resizer"></div></td>
-            </tr>
-        </table>
-    </div>
-
-    <template id="columnTemplate">
-        <td contenteditable="true">NewCol
-            <div class="resizer"></div>
-        </td>
-    </template>
-
-    <script src="main.js"></script>
+    <footer>
+        <p>БФБО-01-24<br>2025г.</p>
+        <div>The End of the Web Page</div>
+    </footer>
 </body>
 </html>

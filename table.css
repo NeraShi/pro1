@@ -2,9 +2,9 @@
     overflow-x: auto;
     scrollbar-color: #6969dd #282a36;
 
-    width: 94%;
-    margin-left: 3%;
-    margin-right: 3%;
+    max-width: 94%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #tableContainer::-webkit-scrollbar {
@@ -14,16 +14,28 @@
 table {
     width: 150px;
     border: 3px solid black;
+    margin-top: 50px;
+}
+
+caption {
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    margin-top: -30px;
 }
 
 td {
     min-width: 150px;
-    max-width: 150px;
     padding: 5px;
     border: 1px solid black;
     position: relative;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+
+.editableText {
+    outline: none;
+}
 
 
 .resizer {

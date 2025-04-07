@@ -6,7 +6,8 @@
     height: 90px;
 
     border: 10px double;
-    margin: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
     padding: 5px;
     border-radius: 10px 15px;
     box-shadow: 3px 5px 10px #828282;
