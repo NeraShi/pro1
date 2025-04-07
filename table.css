@@ -1,0 +1,42 @@
+#tableContainer {
+    overflow-x: auto;
+    scrollbar-color: #6969dd #282a36;
+
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#tableContainer::-webkit-scrollbar {
+    height: 10px;
+}
+
+table {
+    width: 150px;
+    border: 3px solid black;
+}
+
+td {
+    min-width: 150px;
+    max-width: 150px;
+    padding: 5px;
+    border: 1px solid black;
+    position: relative;
+}
+
+
+
+.resizer {
+    cursor: col-resize;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    height: 100%;
+    width: 0.3rem;
+}
+
+.resizer:hover {
+    background: rgb(99 102 241);
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Контрольное задание №1</title>
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="table.css"">
+</head>
+<body>
+    <div>
+        <button class="editButton", onclick="addNewColumn()">Добавить новую колонку</button>
+        <button class="editButton", onclick="popLastColumn()">Удалить последнюю колонку</button>
+    </div>
+    
+    <div id="tableContainer">
+        <table>
+            <tr id="tableRow">Расширяющаяся таблица
+                <td>Первичная колонка <div class="resizer"></div></td>
+            </tr>
+        </table>
+    </div>
+
+    <template id="columnTemplate">
+        <td contenteditable="true">NewCol
+            <div class="resizer"></div>
+        </td>
+    </template>
+
+    <script src="main.js"></script>
+</body>
+</html>

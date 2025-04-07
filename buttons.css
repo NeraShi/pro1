@@ -1,0 +1,31 @@
+.editButton {
+    cursor: pointer;
+    vertical-align: top;
+
+    width: 150px;
+    height: 90px;
+
+    border: 10px double;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px 15px;
+    box-shadow: 3px 5px 10px #828282;
+
+    background-color: #a8c0ff;
+    font-size: medium;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(29, 22, 22, 0.811);
+    transition: 0.5s;
+}
+
+.editButton:hover {
+    background-color: #8b98e3;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.editButton:active {
+    scale: 0.98;
+    transition: 0.1s;
+}
